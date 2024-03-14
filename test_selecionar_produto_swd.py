@@ -21,4 +21,12 @@ class Teste_Produtos():
         self.driver.get(self.url)                  # abre o navegador
         self.driver.find_element(By.ID, "user-name").send_keys("standard_user")     # escreve no campo user-name
         self.driver.find_element(By.NAME, "password").send_keys("secret_sauce")     # escreve a senha
+        self.driver.find_element(By.ID, "login-button").click () #clique no botão de login
+
+        #transição de página
+
+        assert self.driver.find_element(By.CSS_SELECTOR, "span.title").text =="Products"  #confirma se está escrito Products no elemento
+        assert self.driver.find_element(By.ID, "item_4_title_link"). text == "Sauce Labs Backpack" #confirma se está escrito Sauce Labs Backpack no elemento
+        assert self.driver.find_element(By.CSS_SELECTOR, ".inventory_item:nth-child(1) .inventory_item_price").text == (
+            "$29.99")
 
