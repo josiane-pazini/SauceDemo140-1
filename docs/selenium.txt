@@ -3,6 +3,7 @@ Existem 3 pontos principais de fragilidade em uma automação:
 2 - sincronismo (Tipos de Esperas - Waits)
 3 - programação exótica
 
+<<<<<<< HEAD
 Formas de criação e organização do script
 
 1- Gravaçãp (Capture & Playback / Record & Play)
@@ -18,4 +19,20 @@ BDD = Behavior Driven Development = Desenvolvimento Direcionado por Comportament
 Dado - Quando - Então
 cucumber.io 
 
+=======
+Formas de Criação e Organização do Script
+
+1 - Gravação (Capture & Playback / Record & Play)
+2 - Exportação e Importação de código fonte (Script Simples)
+3 - Criar o Script Simples manualmente --> 1 script de teste = 1 arquivo
+4 - Script com Cucumber / Behave --> 1 teste = 2 arquivos (.feature em Gherkin e .py que é o script de automação)
+
+
+BDD = Behavior Driven Development = Desenvolvimento Direcionado por Comportamento
+---> Foco no comportamento esperado do software --> Dito pelo PO (Product Owner)
+
+---> Critérios de Aceitação --> Sintaxe Gherkin
+Dado - Quando - Então
+cucumber.io
+>>>>>>> 5440dc9b0b25833bea7680604b41e572a9fe76dc
 
